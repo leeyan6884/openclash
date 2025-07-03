@@ -56,6 +56,7 @@ DOMAIN-SUFFIX,116cd.com
 DOMAIN-SUFFIX,116cd.net
 DOMAIN-SUFFIX,anxia.com
 DOMAIN-SUFFIX,sq.cc
+DOMAIN-SUFFIX,4ksj.com
 
 # Mac Download
 PROCESS-NAME,aria2c.exe
