@@ -1,82 +1,96 @@
-# Microsoft Services
-# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
-# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
-DOMAIN-KEYWORD,1drv
+# ===========================
+# Microsoft Services（无 OneDrive / AI 域名）
+# ===========================
+
+# === 关键词匹配 ===
 DOMAIN-KEYWORD,microsoft
-DOMAIN-SUFFIX,aadrm.com
-DOMAIN-SUFFIX,acompli.com
-DOMAIN-SUFFIX,acompli.net
+
+# === Microsoft 主服务域名 ===
 DOMAIN-SUFFIX,aka.ms
-DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,aspnetcdn.com
-DOMAIN-SUFFIX,assets-yammer.com
-DOMAIN-SUFFIX,azure.com
-DOMAIN-SUFFIX,azure.net
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,azureiotcentral.com
-DOMAIN-SUFFIX,azurerms.com
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,bing.net
-DOMAIN-SUFFIX,bingapis.com
-DOMAIN-SUFFIX,cloudapp.net
-DOMAIN-SUFFIX,cloudappsecurity.com
-DOMAIN-SUFFIX,edgesuite.net
-DOMAIN-SUFFIX,gfx.ms
-DOMAIN-SUFFIX,hotmail.com
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,live.net
-DOMAIN-SUFFIX,lync.com
-DOMAIN-SUFFIX,msappproxy.net
-DOMAIN-SUFFIX,msauth.net
-DOMAIN-SUFFIX,msauthimages.net
-DOMAIN-SUFFIX,msecnd.net
-DOMAIN-SUFFIX,msedge.net
 DOMAIN-SUFFIX,msft.net
-DOMAIN-SUFFIX,msftauth.net
-DOMAIN-SUFFIX,msftauthimages.net
-DOMAIN-SUFFIX,msftidentity.com
-DOMAIN-SUFFIX,msidentity.com
-DOMAIN-SUFFIX,msn.cn
 DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,msocdn.com
-DOMAIN-SUFFIX,msocsp.com
-DOMAIN-SUFFIX,mstea.ms
-DOMAIN-SUFFIX,o365weve.com
-DOMAIN-SUFFIX,oaspapps.com
+DOMAIN-SUFFIX,msn.cn
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,windowsupdate.com
+
+# === Outlook / Exchange / 邮件相关 ===
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,outlookmobile.com
+DOMAIN-SUFFIX,hotmail.com
+
+# === Office365 / SharePoint（去除 OneDrive） ===
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,officeppe.net
-DOMAIN-SUFFIX,omniroot.com
-DOMAIN-SUFFIX,onedrive.com
-DOMAIN-SUFFIX,onenote.com
-DOMAIN-SUFFIX,onenote.net
-DOMAIN-SUFFIX,onestore.ms
-DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,outlookmobile.com
-DOMAIN-SUFFIX,phonefactor.net
-DOMAIN-SUFFIX,public-trust.com
-DOMAIN-SUFFIX,sfbassets.com
-DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
+DOMAIN-SUFFIX,o365weve.com
+
+# === Azure 云服务相关（非 AI） ===
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,azure.net
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,azurerms.com
+DOMAIN-SUFFIX,azureiotcentral.com
+DOMAIN-SUFFIX,cloudapp.net
+DOMAIN-SUFFIX,trafficmanager.net
+DOMAIN-SUFFIX,windowsazure.com
+
+# === Bing / 搜索 & 地图相关 ===
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
+DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,virtualearth.net
+
+# === 验证 / 身份服务 ===
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msauthimages.net
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msftauthimages.net
+DOMAIN-SUFFIX,msftidentity.com
+DOMAIN-SUFFIX,msidentity.com
+DOMAIN-SUFFIX,phonefactor.net
+
+# === Skype / Teams / Lync ===
+DOMAIN-SUFFIX,lync.com
 DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,skypeassets.com
 DOMAIN-SUFFIX,skypeforbusiness.com
-DOMAIN-SUFFIX,staffhub.ms
+DOMAIN-SUFFIX,mstea.ms
+DOMAIN-SUFFIX,sfbassets.com
+
+# === CDN & 静态资源服务 ===
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,aspnetcdn.com
+DOMAIN-SUFFIX,gfx.ms
+DOMAIN-SUFFIX,sfx.ms
+DOMAIN-SUFFIX,msedge.net
+DOMAIN-SUFFIX,msecnd.net
+DOMAIN-SUFFIX,msocdn.com
+
+# === Yammer / 企业社交相关 ===
+DOMAIN-SUFFIX,yammer.com
+DOMAIN-SUFFIX,assets-yammer.com
+DOMAIN-SUFFIX,yammerusercontent.com
+
+# === 其他 Microsoft 服务（非 AI / 非 OneDrive） ===
+DOMAIN-SUFFIX,acompli.com
+DOMAIN-SUFFIX,acompli.net
+DOMAIN-SUFFIX,onestore.ms
+DOMAIN-SUFFIX,oaspapps.com
+DOMAIN-SUFFIX,cloudappsecurity.com
+DOMAIN-SUFFIX,msappproxy.net
 DOMAIN-SUFFIX,svc.ms
+DOMAIN-SUFFIX,staffhub.ms
+DOMAIN-SUFFIX,sway.com
 DOMAIN-SUFFIX,sway-cdn.com
 DOMAIN-SUFFIX,sway-extensions.com
-DOMAIN-SUFFIX,sway.com
-DOMAIN-SUFFIX,trafficmanager.net
+DOMAIN-SUFFIX,public-trust.com
+DOMAIN-SUFFIX,omniroot.com
 DOMAIN-SUFFIX,uservoice.com
-DOMAIN-SUFFIX,virtualearth.net
 DOMAIN-SUFFIX,visualstudio.com
-DOMAIN-SUFFIX,windows-ppe.net
-DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windows.net
-DOMAIN-SUFFIX,windowsazure.com
-DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,wunderlist.com
-DOMAIN-SUFFIX,yammer.com
-DOMAIN-SUFFIX,yammerusercontent.com
+DOMAIN-SUFFIX,windows-ppe.net
