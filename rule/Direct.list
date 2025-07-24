@@ -15,7 +15,7 @@ DOMAIN-KEYWORD,baidu
 # IP段匹配
 IP-CIDR,219.146.1.66/32,no-resolve
 
-#DOMAIN-SUFFIX,4ksj.com
+DOMAIN-SUFFIX,4ksj.com
 
 # 国内DNS
 DOMAIN-SUFFIX,dns.alidns.com
