@@ -1,40 +1,38 @@
-# ===========================
-# AI 平台访问规则（OpenAI、Anthropic、Bard、Copilot 等）
-# ===========================
+# ==================================
+# AI 平台访问规则（OpenAI、Claude、Bard、Copilot 等）
+# ==================================
 
 # ========== OpenAI ==========
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaicom-api
-DOMAIN-SUFFIX,chat.openai.com
+DOMAIN,chat.openai.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN,chat.openai.com
-DOMAIN,chat.openai.com.cdn.cloudflare.net
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
-DOMAIN,production-openaicom-storage.azureedge.net
 
-# ========== Anthropic (Claude) ==========
+# ========== Anthropic Claude ==========
 DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,Claude
+DOMAIN-KEYWORD,claude
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai.com
 
 # ========== Perplexity ==========
 DOMAIN-SUFFIX,perplexity.ai
 
-# ========== Google AI (Bard, Gemini, Makersuite) ==========
-DOMAIN,ai.google.dev
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,makersuite.google.com
+# ========== Google AI（Gemini / Bard / Makersuite / Colab） ==========
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,developerprofiles
+DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,makersuite.google.com
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,makersuite.google.com
@@ -44,7 +42,7 @@ DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,apis.google.com
 
-# ========== Microsoft Copilot / Bing Chat ==========
+# ========== Microsoft Copilot / Bing AI ==========
 DOMAIN,copilot.microsoft.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
@@ -63,7 +61,7 @@ DOMAIN-SUFFIX,api.microsoftapp.net
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
 DOMAIN-SUFFIX,edgeservices.bing.com
 
-# ========== 第三方依赖服务（验证、分析、支付等） ==========
+# ========== 第三方依赖服务（认证、分析、支付等） ==========
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,auth0.com
@@ -83,7 +81,7 @@ DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 
-# ========== 其他 ==========
+# ========== 其他支持服务 ==========
 DOMAIN,cdn.usefathom.com
 
 # ========== IP 段匹配 ==========
